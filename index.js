@@ -1,11 +1,28 @@
-if (animal.equals("dog").toLowerCase) {
-    console.log("Bark");
-} else if (animal.equals("cat").toLowerCase) {
-    console.log("Meow");
-} else if (animal.equals("cow").toLowerCase) {
-    console.log("Moo");
-} else if (animal.equals("bird").toLowerCase) {
-    console.log("Tweet");
-} else {
-    console.log("I don't know what that sounds like!");
+function scuberGreetingForFeet(feet){
+  // Write your code here!
+  if (feet <= 400){
+    return "This one is on me!"
+  }else if(feet <= 2500){
+    return "I will gladly take your thirty bucks."
+  }else if(feet > 2500){
+    return "No can do."
+  }
+}
+
+function ternaryCheckCity(city){
+  // Write your code here!
+  return city === "NYC"? "Ok, sounds good." : "No go.";
+}
+
+function switchOnCharmFromTip(tip){
+  // Write your code here!
+  switch (tip){
+    case 'generous':
+      return "Thank you so much.";
+    case "not as generous":
+      return "Thank you.";
+    default:
+      return "Bye.";
+  }
+  
 }
